@@ -98,12 +98,12 @@
   
   .images {
     position: absolute;
-    bottom: 12vh; /* Use vh instead of % for better vertical consistency */
+    bottom: 30vh; /* Use vh instead of % for better vertical consistency */
     left: 50%;
     transform: translateX(-50%);
     width: 60vw; /* Use vw instead of % to scale better on mobile */
-    max-width: 400px;
-    min-width: 200px;
+    max-width: 90vw;
+    min-width: 80vw;
     border-radius: 20px;
     box-shadow: 0 0 40px rgba(255, 105, 180, 0.5);
     z-index: 0;
@@ -112,7 +112,7 @@
   /* Responsive tweaks for small screens */
   @media (max-width: 768px) {
     .images {
-      bottom: 15vh;
+      bottom: 25vh;
       width: 80vw;  /* Larger width for small screens */
     }
   

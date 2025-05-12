@@ -1,0 +1,99 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe5e5;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    margin: 20px;
+  }
+  
+  .container .tenor-gif-embed {
+    max-width: 200px;
+  }
+  
+  .container .btn {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .btn a {
+    text-decoration: none;
+    color: #111;
+    background: #fff;
+    padding: 10px 25px;
+    border-radius: 8px;
+    box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
+  }
+
+
+  
+  .bubble {
+    position: absolute;
+    background: rgba(255, 204, 249, 0.6);
+    color: #444;
+    padding: 15px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: transform 0.3s ease, opacity 0.3s;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .bubble:hover {
+    background: rgba(255, 204, 249, 0.8);
+  }
+  
+  .bubble.popped {
+    transform: scale(0);
+    opacity: 0;
+  }
+  
+  .answer {
+    position: absolute;
+    color: #e91e63;
+    font-size: 1.1rem;
+    font-weight: bold;
+    animation: fadeIn 1s ease;
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+
+
+
+   
+ 

@@ -98,7 +98,7 @@
   
   .images {
     position: absolute;
-    bottom: 30vh; /* Use vh instead of % for better vertical consistency */
+    top: 18vh; /* Use vh instead of % for better vertical consistency */
     left: 50%;
     transform: translateX(-50%);
     width: 60vw; /* Use vw instead of % to scale better on mobile */
@@ -203,7 +203,7 @@
 
   .gift {
     position: absolute;
-    bottom: 20px;
+    bottom: 80px;
     left: 50%;
     transform: translateX(-50%);
     width: 70px;

@@ -18,16 +18,16 @@
 //   bubble.innerHTML = `<div class="lyric">${text}</div>`;
 //   wrapper.appendChild(bubble);
 
-//   // Randomize bubble position
+ 
 //   bubble.style.top = Math.random() * 80 + "%";
 //   bubble.style.left = Math.random() * 80 + "%";
 
-//   // Auto pop after delay
+ 
 //   setTimeout(() => {
 //     const rect = bubble.getBoundingClientRect();
 //     bubble.classList.add("popped");
 
-//     // Show image at bubble's position
+ 
 //     const reveal = document.createElement("div");
 //     reveal.className = "reveal-photo";
 //     reveal.style.left = rect.left + "px";
@@ -107,7 +107,7 @@ function showBubble({ text, image }) {
 
     setTimeout(() => {
       bubble.remove();
-      reveal.remove(); // remove image too
+      reveal.remove(); 
     }, 2000); // total time
   }, 1500); // show image after 1.5s
 }
@@ -123,5 +123,14 @@ startBtn.addEventListener("click", () => {
   });
 });
 
+const container = document.getElementById('hearts');
+
+for (let i = 0; i < 40; i++) {
+  const heart = document.createElement('div');
+  heart.classList.add('heart');
+  heart.style.left = `${Math.random() * 100}vw`;
+  heart.style.animationDelay = `${Math.random() * 5}s`;
+  container.appendChild(heart);
+}
 
 

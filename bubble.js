@@ -1,16 +1,16 @@
  
-  const questionsAndAnswers = [
-    { q: "Do u know who loves you the most?", a: "Men without 'n'" },
-    { q: "Are you good at maths?", a: "cause i 1, 2, 1/2 , 6 with you  " },
-    { q: "Decode this shawty?", a: "UR26I124Q" },
+const questionsAndAnswers = [
+    { q: "Do u know who loves you the most?", a: "Men without 'n' 💕" },
+    { q: "Are you good at maths?", a: "cause i 1, 2, 1/2 , 6 with you 🤓" },
+    { q: "Decode this shawty?", a: "UR26I124Q 🤔" },
     { q: "Can i call you Bromine??", a: "But Bro is silent 💖" },
-    { q: "Mujhe ek bhot beautiful ladki ko dekhne kan mn ho rha?", a: "video call kro n" },
-    { q: "Acha oyi ek baat bta 12 aur 13 me kon bda h", a: "Hn tujhe to pta hoga hi " },
-    { q: "Uttar du kya aapki??", a: "Nazar" },
+    { q: "Mujhe ek bhot beautiful ladki ko dekhne kan mn ho rha?", a: "video call kro n 📞" },
+    { q: "Acha oyi ek baat bta 12 aur 13 me kon bda h", a: "Hn tujhe to pta hoga hi 😏" },
+    { q: "Uttar du kya aapki??", a: "Nazar 👀" },
     { q: "Do you miss me?", a: "Every second 💗" },
-    { q: "Ask me again, but this time , try it with a pick up line", a: " let's see if u can keep it up"},
-    
-  ];
+    { q: "Ask me again, but this time , try it with a pick up line", a: "let's see if u can keep it up 😉" },
+];
+
   let currentIndex = 0;
 
   function showNextBubble() {
@@ -38,7 +38,7 @@
       ans.style.left = rect.left + 'px';
       document.body.appendChild(ans);
       currentIndex++;
-      showNextBubble(); // Show the next bubble after popping
+      showNextBubble(); 
     }, 300);
   }
 
@@ -59,8 +59,7 @@
 //       if (document.body.contains(bubble)) bubble.remove();
 //     }, 10000);
 //   }
-  
-  // Keep generating bubbles every 1.5 seconds
+ 
   //setInterval(createBubble, 1500);
  
 
@@ -98,8 +97,7 @@
 //   }
 
   
-
-//   // Generate a new bubble every 1.2 seconds
+ 
 //   setInterval(createBubble, 1200);
  
 

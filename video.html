@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Surprise 💝</title>
+  <style>
+body {
+  margin: 0;
+  background: black;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;  
+}
+
+/* Center the video, but keep hearts floating from all over */
+video {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 720px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+}
+
+/* Heart styling */
+.heart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: pink;
+  clip-path: polygon(50% 0%, 61% 12%, 70% 25%, 80% 40%, 85% 60%, 70% 80%, 50% 100%, 30% 80%, 15% 60%, 20% 40%, 30% 25%, 39% 12%);
+  animation: floatHeart 6s linear infinite;
+  z-index: 2;
+}
+
+/* Floating animation */
+@keyframes floatHeart {
+  0% {
+    transform: translateY(100vh) scale(1);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh) scale(1.5);
+    opacity: 0;
+  }
+}
+
+#startBtn {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: hotpink;
+  color: white;
+  border: none;
+  padding: 1em 2em;
+  font-size: 1.2rem;
+  border-radius: 1em;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+}
+#startBtn:hover {
+  animation: pulseButton 0.6s ease-in-out;
+}
+@keyframes pulseButton {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="hearts" id="hearts"></div>
+
+  <!-- Video hidden initially -->
+  <video id="loveVideo" src="your-video.mp4" loop></video>
+
+  <!-- Start button -->
+  <button id="startBtn">💖 Start Surprise 💖</button>
+
+  <script>
+    const video = document.getElementById('loveVideo');
+    const button = document.getElementById('startBtn');
+
+    button.addEventListener('click', () => {
+      button.style.display = 'none';
+      video.play();
+    });
+
+    // Hearts animation remains the same
+    const container = document.getElementById('hearts');
+    for (let i = 0; i < 40; i++) {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.style.left = `${Math.random() * 100}vw`;
+      heart.style.animationDelay = `${Math.random() * 5}s`;
+      container.appendChild(heart);
+    }
+  </script>
+</body>
+
+ 
+</html>

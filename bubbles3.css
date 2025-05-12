@@ -1,4 +1,4 @@
-/* author - deepak tiwari */
+
 * {
     margin: 0;
     padding: 0;
@@ -149,3 +149,26 @@
     50% { transform: translateY(-20px); }
   }
   
+  .butn {
+    position: absolute;  
+    bottom: 20px; 
+    left: 50%;  
+    transform: translateX(-50%);  
+    text-align: center;
+  }
+  
+  .butn a {
+    display: inline-block;
+    padding: 1em 2em;
+    background: hotpink;
+    color: white;
+    text-decoration: none;
+    border-radius: 2em;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.4);
+  }
+  
+  .butn a:hover {
+    transform: scale(1.1);
+  }

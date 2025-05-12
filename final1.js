@@ -58,7 +58,7 @@ const lyrics = [
   { time: 15, text: "Subah haseen meri shaam haseen ae", image: "img6.jpg" },
   { time: 18, text: "Ye bematlab di zindagi", image: "img7.jpg" },
   { time: 21, text: "Jado ni tere naam haseen h", image: "img8.jpg" },
-  { time: 22, text: "Tu jo dave paigaam haseen ae", image: "img9.jpg" },
+  { time: 22, text: "Tu jo dave paigaam haseen ae", image: "img19.jpg" },
   { time: 26, text: "Khaas hove ya aam haseen ae", image: "img10.jpg" },
   { time: 28, text: "Tere naal jo pal lage", image: "img11.jpg" },
   { time: 29, text: "Wo pal da anjaam haseen hai", image: "img12.jpg" },

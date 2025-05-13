@@ -73,7 +73,7 @@
   } */
   body {
     margin: 0;
-    background: black;
+    background: linear-gradient(to bottom, #020e14, #de9fc6);
     font-family: 'Quicksand', sans-serif;
     overflow: hidden;
     position: relative;
